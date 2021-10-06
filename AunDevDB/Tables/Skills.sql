@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Skills]
+(
+	SkillsId INT IDENTITY,
+	[Name] VARCHAR(20) UNIQUE NOT NULL,
+	CONSTRAINT PK_SkillsID PRIMARY KEY (SkillsId),
+	CONSTRAINT UK_Skills_Name UNIQUE ([Name])
+)
